@@ -299,11 +299,11 @@ nav ul{
     bottom: -230px;
 }
 .swiper-button-prev:after{
-    background: url('/img/ArrowLeftCircle.png') no-repeat center/100%;    
+    background: url('img/ArrowLeftCircle.png') no-repeat center/100%;    
     left: -10px;
 }
 .swiper-button-next:after {
-    background: url('/img/ArrowRightCircle.png') no-repeat center/100%;
+    background: url('img/ArrowRightCircle.png') no-repeat center/100%;
     right: 1080px;
 }
 .listeners__slider__item {
