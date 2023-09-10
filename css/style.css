@@ -805,11 +805,11 @@ nav ul{
         padding: 140px 10px 210px 10px;
     }
     .swiper-button-prev:after{
-        background: url('/img/ArrowLeftCircle.png') no-repeat center/100%;    
+        background: url('img/ArrowLeftCircle.png') no-repeat center/100%;    
         left: -10px;
     }
     .swiper-button-next:after {
-        background: url('/img/ArrowRightCircle.png') no-repeat center/100%;
+        background: url('img/ArrowRightCircle.png') no-repeat center/100%;
         right: -10px;
     }
     .footer__wrapper{
@@ -886,9 +886,6 @@ nav ul{
     }
     .column{
         padding: 20px;
-    }
-    .row{
-        width: 100%;
     }
     .about__item{
         max-width: 300px;
