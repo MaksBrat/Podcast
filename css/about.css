@@ -1,0 +1,232 @@
+.top__container{
+    overflow: visible;
+    position: relative;
+    padding: 24px 0 220px 0;
+}
+.podcast__container .btn__transparent{
+    margin-right: 20px;
+}
+.amount__container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 1159px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+}
+.amount__item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    border: 1.5px solid #000000;
+    max-width: 373px;
+    width: 100%;
+    transition: all .3s;  
+}
+.amount__item:hover{
+    box-shadow: 6px 6px 0px 0px #CD4631;
+    cursor: pointer;
+}
+.amount__item__content{
+    margin: 59px 0;
+}
+.amount__item .number{
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0.02em;
+}
+.amount__item__title{
+    margin-top: 20px;
+}
+
+.listeners__container{
+    background-color: white;
+}
+.listeners__main__img .image__cutter{
+    width: 1187px;
+    height: 640px;
+    margin: 32px 0 60px 0;
+}
+.history__container{
+    margin-bottom: 80px;
+}
+
+.line{
+    background-color: #dbd3d3;
+}
+.founders__container{
+    margin-top: 100px;
+}
+.founders__item{
+    display: flex;
+    gap: 20px;
+    max-width: 570px;
+    width: 100%;
+    border: 2px solid #000000;
+    padding: 16px;
+    border-radius: 8px;
+    transition: all .3s;
+}
+.founders__item:hover{
+    box-shadow: 10px 10px 0px 0px #000000;  
+}
+.founders__container .image__cutter{
+    width: 259px;
+    height: 488px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.founders__content{
+    display: flex;
+    gap: 20px;
+}
+.founder__about{
+    max-width: 259px;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: auto;
+}
+.founder__post {
+    line-height: 22px;
+    font-weight: 600;
+}
+.founder__name {
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 37px;
+    margin-top: 6px;
+}
+.founder__description {
+    line-height: 22px;
+    color: #4D4D4D;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid #dbd3d3;
+}
+.follow__section{
+    text-align: right;
+    padding-top: 10px;
+}
+.follow__text {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #4D4D4D;
+}
+.follow__section img:hover{
+    cursor: pointer;
+}
+.sponsor__container{
+    overflow: hidden;
+    background-color: #F7EDE8;
+}
+.sponsor__slider {
+    margin-top: 100px;
+    position: relative;
+}
+.sponsor__slider__item {
+    background: white;
+    text-align: center;
+    border: 1.61px solid #000000;
+    border-radius: 12px;
+    padding: 40px 17px 30px 17px;
+    width: 570px;
+}
+.sponsor__logo {
+    padding-bottom: 20px;
+}
+.sponsor__container .line{
+    background-color: #dbd3d3;
+    max-width: 354px;
+    margin-bottom: 30px;
+    margin: 0 auto 30px;
+}
+.logo__img {
+}
+.sponsor__about {
+    line-height: 22px;
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+    bottom: -160px;
+}
+.contact__container .inner__container{
+    max-width: 766px;
+}
+.container {
+}
+.inner__container {
+}
+.container__title {
+}
+.container__subtitle {
+}
+.contact__container .line {
+    margin: 60px 0 40px 0;
+}
+.contact__form {
+}
+.contact__info {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+.contact__info .form__group{
+    max-width: 373px;
+    width: 100%;
+}
+.form__group label{
+    display: block;
+    font-weight: 700;
+    line-height: 22px;
+}
+label.required::after{
+    content: "*";
+    color: #CD4631;
+    font-size: 12px;
+    position: relative;
+    margin-left: 3px;
+    top: -3px;
+}  
+.form__item{
+    border: 2px solid black;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4D4D4D;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 16px;
+}
+.form__item:focus{
+    border: 2px solid #CD4631;
+}
+input.form__item{
+    width: 100%;
+}
+.form__item__text-bold{
+    font-weight: 700;
+    color: black
+}
+.message{
+    margin-top: 40px;
+}
+textarea{
+    width: 766px;
+    height: 165px;
+    resize: none;
+}
+.form__bottom__section {
+    display: flex;
+    margin-top: 60px;
+}
+.form__bottom__section .link {
+    color:#CD4631;
+    font-weight: 500;
+}
+.form__bottom__section .btn__black{
+    margin: 0 110px 0 220px;
+}

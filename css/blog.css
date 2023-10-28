@@ -1,0 +1,33 @@
+.top__container{
+    overflow: visible;
+    position: relative;
+}
+.search__container {
+    position: absolute;
+    max-width: 570px;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+}
+.search__form {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 25px 40px;
+    border: 1.5px solid #000000;
+    border-radius: 16px;
+}
+.search__form input{
+    font-size: 16px;
+    line-height: 26px;
+    color: #4D4D4D;
+    margin-left: 24px;
+}
+.search__form .image__cutter{
+    width: 19px;
+    height: 19px;
+}
+.news{
+    row-gap: 40px;
+}

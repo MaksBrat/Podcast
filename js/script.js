@@ -20,3 +20,13 @@ const listenersSlider = new Swiper('.listeners__slider', {
         prevEl: '.swiper-button-prev',
     }
 });
+
+const sponsorSlider = new Swiper('.sponsor__slider', {
+    direction: 'horizontal',
+    spaceBetween: 20,
+    slidesPerView: 'auto',
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
