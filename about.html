@@ -15,7 +15,9 @@
         <link rel="stylesheet" href="css/general.css">  
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/about.css">
-        
+        <script src= 
+    "https://smtpjs.com/v3/smtp.js"> 
+  </script> 
         <title>Podcast</title>
     </head>
 </head>
@@ -294,15 +296,14 @@
                     Send your message to us
                 </div>
                 <div class="line"></div>
-
-                <form class="contact__form">
+                <form method="post" class="contact__form">
                     <div class="contact__info">
                         <div class="form__group">
                             <label class="required" for="">Full name</label>
                             <input class="form__item form__item__text-bold" placeholder="Full name" type="text">
                         </div>
                         <div class="form__group">
-                            <label class="required" for="">Email</label>
+                            <label class="required" aria-label="email">Email</label>
                             <input class="form__item" placeholder="johndoe@gmail.com" type="email">
                         </div>
                         <div class="form__group">
@@ -326,7 +327,7 @@
                             <span class="highlighted__word-red">*</span>
                             required
                         </div>
-                        <div class="btn btn__black">SEND MESSAGE</div>
+                        <div class="btn btn__black" onclick="sendEmail()">SEND MESSAGE</div>
                         <div class="policy">
                             Viverra at port 
                             <br>

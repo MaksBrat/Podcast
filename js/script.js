@@ -30,3 +30,22 @@ const sponsorSlider = new Swiper('.sponsor__slider', {
         prevEl: '.swiper-button-prev',
     }
 });
+
+function menuOnClick() {
+    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("burger-nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+
+(() => {
+    const includes = document.getElementsByTagName('include');
+    [].forEach.call(includes, i => {
+        let filePath = i.getAttribute('src');
+        fetch(filePath).then(file => {
+            file.text().then(content => {
+                i.insertAdjacentHTML('afterend', content);
+                i.remove();
+            });
+        });
+    });
+})();
