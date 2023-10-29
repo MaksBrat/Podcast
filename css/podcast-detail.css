@@ -85,6 +85,8 @@
     display: flex;
     justify-content: space-around;
     margin: 100px 0 20px 0;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 .options a{
     font-size: 23px;
@@ -97,4 +99,45 @@
 }
 .episodes__container{
     background-color: white;
+}
+
+
+@media screen and (max-width: 1200px){
+    .details__container{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .podcast__bottom__section{
+        text-align: center;
+    }
+    .tags__container{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .top__container{
+        padding-bottom: 50px;
+    }
+    .podcast__preview .image__cutter {
+        width: 294px;
+        height: 302px;
+    }
+    .podcast__content__container{
+        padding: 0 20px;
+    }
+    .podcast__content__title{
+        font-size: 30px;
+    }
+    .podcast__about{
+        font-size: 14px;
+    }
+    .podcast__bottom__section .btn__black{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .tags__container{
+        margin-top: 50px;
+    }
 }

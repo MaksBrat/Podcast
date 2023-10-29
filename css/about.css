@@ -10,9 +10,10 @@
     display: flex;
     gap: 20px;
     justify-content: center;
-    width: 1159px;
+    width: 100%;
     position: absolute;
     bottom: 0;
+    left: 0;
     transform: translateY(50%);
 }
 .amount__item{
@@ -42,19 +43,15 @@
 .amount__item__title{
     margin-top: 20px;
 }
-
 .listeners__container{
     background-color: white;
 }
 .listeners__main__img .image__cutter{
-    width: 1187px;
-    height: 640px;
     margin: 32px 0 60px 0;
 }
 .history__container{
     margin-bottom: 80px;
 }
-
 .line{
     background-color: #dbd3d3;
 }
@@ -145,8 +142,6 @@
     margin-bottom: 30px;
     margin: 0 auto 30px;
 }
-.logo__img {
-}
 .sponsor__about {
     line-height: 22px;
 }
@@ -156,22 +151,13 @@
 .contact__container .inner__container{
     max-width: 766px;
 }
-.container {
-}
-.inner__container {
-}
-.container__title {
-}
-.container__subtitle {
-}
 .contact__container .line {
     margin: 60px 0 40px 0;
-}
-.contact__form {
 }
 .contact__info {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: 20px;
     row-gap: 40px;
 }
@@ -229,4 +215,73 @@ textarea{
 }
 .form__bottom__section .btn__black{
     margin: 0 110px 0 220px;
+}
+
+
+@media screen and (max-width: 1200px){
+    .amount__item{
+        max-width: 150px;
+    }
+    .amount__item__content{
+        text-align: center;
+    }
+    .amount__item .number {
+        font-size: 29px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    .sponsor__container{
+        padding: 140px 15px;
+    }
+    .founders__content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .amount__item {
+        max-width: 100px;
+    }
+    .form__group{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .contact__info .form__group{
+        max-width: 350px;
+    }
+    .founders__container .image__cutter{
+        width: 150px;
+        height: 250px;
+    }
+    .founder__about{
+        max-width: 100%;
+    }
+    .founder__name{
+        font-size: 25px;
+    }
+    .follow__text{
+        font-size: 10px;
+    }
+    .sponsor__slider__item {
+        width: 330px;
+    }
+    textarea{
+        width: 100%;
+    }
+    .form__bottom__section {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .form__bottom__section .btn__black{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .podcast__container .btn__transparent{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }

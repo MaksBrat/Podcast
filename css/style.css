@@ -197,10 +197,11 @@ nav ul{
 .author__container {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .about__container .author__container{
     width: 390px;
-    margin: 0 auto;
+    margin: 0 auto;  
 }
 .author__avatar{
     margin-right: 10px;
@@ -602,7 +603,7 @@ nav ul{
 .download__btn .sparkle{
     position: absolute;
     top: -70px;
-    right: -75px;
+    right: -60px;
 }
 .platforms__available{
     display: flex;
@@ -712,7 +713,6 @@ nav ul{
         align-items: center;
         gap: 30px;
     }
-
     .comment__text{
         font-size: 29px;
     }
@@ -726,6 +726,9 @@ nav ul{
     .swiper-button-next:after {
         background: url('../img/ArrowRightCircle.png') no-repeat center/100%;
         right: -10px;
+    }
+    .footer__container.container{
+        padding: 100px 0 20px 0;
     }
     .footer__wrapper{
         flex-direction: column;
@@ -779,7 +782,7 @@ nav ul{
     }
     .episodes, .news{
         padding: 20px;
-    }
+    }  
     .episodes__title{
         font-size: 16px;
     }
@@ -807,10 +810,10 @@ nav ul{
     }
 }
 
-
 @media screen and (max-width: 480px){
     .about__container .author__container{
-        width: 100%;
+        width: auto;
+        justify-content: center;
     } 
     .row{
         width: 100%;

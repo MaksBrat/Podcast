@@ -31,3 +31,9 @@
 .news{
     row-gap: 40px;
 }
+
+@media screen and (max-width: 880px){
+    .search__container {
+        max-width: 300px;
+    }
+}
