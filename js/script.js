@@ -37,15 +37,39 @@ function menuOnClick() {
     document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
-(() => {
-    const includes = document.getElementsByTagName('include');
-    [].forEach.call(includes, i => {
-        let filePath = i.getAttribute('src');
-        fetch(filePath).then(file => {
-            file.text().then(content => {
-                i.insertAdjacentHTML('afterend', content);
-                i.remove();
-            });
-        });
+const openModalButtons = document.querySelectorAll('.openModalBtn');
+const submitFormBtn = document.getElementById("submitFormBtn");
+const modal = document.getElementById("modal");
+
+function toggleModal(show) {
+    const modalStyle = modal.style;
+    const bodyStyle = document.body.style;
+
+    if (show) {
+        modalStyle.opacity = "1";
+        modalStyle.visibility = "visible";
+        bodyStyle.overflow = 'hidden';
+    } else {
+        modalStyle.opacity = "0";
+        modalStyle.visibility = "hidden";
+        bodyStyle.overflow = 'auto';
+    }
+}
+
+openModalButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        toggleModal(true);
     });
-})();
+});
+
+submitFormBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggleModal(false);
+});
+
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        toggleModal(false);
+    }
+});
+

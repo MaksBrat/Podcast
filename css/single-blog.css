@@ -49,8 +49,7 @@
     margin-bottom: 100px;
 }
 .blog__container .author__container{
-    width: 390px;
-    margin: 0 auto;
+    justify-content: center;
 }
 .comment__container .vector {
     bottom: -20px;
@@ -133,9 +132,6 @@
     .blog__container.container{
         padding: 100px 20px;
     }
-    .blog__container .author__container{
-        width: auto;
-    }
 }
 
 @media screen and (max-width: 800px){
@@ -147,5 +143,4 @@
         font-size: 40px;
         line-height: 50px;
     }
-
 }

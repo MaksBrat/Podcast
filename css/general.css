@@ -115,3 +115,173 @@
     font-size: 16px;
     line-height: 26px;
 }
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.dropdown-content {
+    position: absolute;
+    background: radial-gradient(circle, #DC052D, #DC052D);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .3s, opacity .3s linear;
+}
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown-item{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    color: black;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .3s, opacity .3s linear;
+}
+.modal .btn{
+    transition: none;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.modal .inner__container {
+    max-width: 766px;
+}
+.modal-content .form__bottom__section{
+    justify-content: center;
+}
+.modal-content .form__bottom__section .btn__black{
+    margin: 0;
+}
+
+.contact__container .inner__container{
+    max-width: 766px;
+}
+.contact__container .line {
+    margin: 60px 0 40px 0;
+}
+.contact__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+.contact__info .form__group{
+    max-width: 373px;
+    width: 100%;
+}
+.form__group label{
+    display: block;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+}
+label.required::after{
+    content: "*";
+    color: #CD4631;
+    font-size: 12px;
+    position: relative;
+    margin-left: 3px;
+    top: -3px;
+}  
+.form__item{
+    border: 2px solid black;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4D4D4D;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 16px;
+}
+.form__item:focus{
+    border: 2px solid #CD4631;
+}
+input.form__item{
+    width: 100%;
+}
+.form__item__text-bold{
+    font-weight: 700;
+    color: black
+}
+.message{
+    margin-top: 40px;
+}
+textarea{
+    width: 766px;
+    height: 165px;
+    resize: none;
+}
+.form__bottom__section {
+    display: flex;
+    margin-top: 60px;
+}
+.form__bottom__section .link {
+    color:#CD4631;
+    font-weight: 500;
+}
+.form__bottom__section .btn__black{
+    margin: 0 110px 0 220px;
+}
+
+
+@media screen and (max-width: 880px){
+    .modal-content {
+        max-width: 500px;
+        width: 100%;
+    }
+    .form__group{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .contact__info .form__group{
+        max-width: 350px;
+    }
+    textarea{
+        width: 100%;
+    }
+    .form__bottom__section {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .form__bottom__section .btn__black{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .modal-content {
+        max-width: 300px;
+        width: 100%;
+    }
+}

@@ -17,7 +17,7 @@ header{
 .nav__main{
     margin-left: 120px;
 }
-.nav__main ul{
+.nav__main > ul{
     display: flex;
 }
 .nav__main .nav__item {
@@ -295,11 +295,9 @@ header{
 .author__container {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .about__container .author__container{
-    width: 390px;
-    margin: 0 auto;  
+    justify-content: center;
 }
 .author__avatar{
     margin-right: 10px;

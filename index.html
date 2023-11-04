@@ -20,16 +20,59 @@
 <body>
     <div class="wrapper">
         <div class="top__container">
-            <include src="./header.html"></include>
+            <div class="inner__container">
+                <header>
+                    <div class="logo__container">
+                        <a href="index.html"><img src="img/logo.png" alt="logo"></a>                  
+                    </div>
+                    <nav class="nav__main">
+                        <ul>
+                            <li><a href="index.html#episodes" class="nav__item">Episodes</a></li>
+                            <li><a href="about.html" class="nav__item">About</a></li>
+                            <li>   
+                                <div class="dropdown">
+                                    <span class="nav__item" >More</span>
+                                    <ul class="dropdown-content">
+                                        <li><a href="blog.html" class="dropdown-item">Blog</a></li>
+                                    </ul>
+                                </div>                         
+                            </li>
+                        </ul>                       
+                    </nav>
+                    <div class="additional__block">
+                        <a href="index.html#episodes" class="resent__episodes__btn">Resent Episodes</a>
+                        <a href="index.html#sponsor" class="subscribe">Subscribe</a>
+                    </div>
+                    
+                    <div class="burger-wrapper">
+                        <div id="burger-menu">
+                            <div id="menu-bar" onclick="menuOnClick()">
+                                <div id="bar1" class="bar"></div>
+                                <div id="bar2" class="bar"></div>
+                                <div id="bar3" class="bar"></div>
+                            </div>
+                            <nav class="burger-nav" id="burger-nav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="podcast-detail.html">Episodes</a></li>
+                                </ul>
+                            </nav> 
+                        </div>                         
+                        <div class="menu-bg" id="menu-bg"></div>   
+                    </div>                                   
+                </header>
+            </div>
             
             <div class="podcast__container">
                 <img class="container__img-left decor" src="img/podcast/Hero Shape Swirl.png" alt="#">
                 <img class="container__img-right decor" src="img/podcast/Group 48095792.png" alt="#">
-                <div class="podcast__container__title">
+                <h1 class="podcast__container__title">
                     Your Daily 
                     <br>  
                     <span class="highlighted__word-red">Podcast</span> 
-                </div>
+                </h1>
                 <div class="podcast__container__subtitle">
                     We cover all kinds of categories and <br>
                     a weekly special guest.
@@ -49,8 +92,8 @@
                         </div>
                         <div class="image__cutter">
                             <img class="podcast__img" src="img/podcast/podcast_slider/cover (4).png" alt="podcast img" >
-                        </div>                     
-                        <div class="podcast__title">Tesla Autopilot</div>
+                        </div>      
+                        <a href="podcast-detail.html" class="podcast__title">Tesla Autopilot</a>                          
                     </div>
                     <div class="podcast__slider__item swiper-slide">
                         <div class="podcast__platform">
@@ -61,7 +104,7 @@
                         <div class="image__cutter">
                             <img class="podcast__img" src="img/podcast/podcast_slider/cover.png" alt="podcast img" >
                         </div>                     
-                        <div class="podcast__title">Self–confidence</div>
+                        <a href="podcast-detail.html" class="podcast__title">Self–confidence</a>
                     </div>
                     <div class="podcast__slider__item swiper-slide">
                         <div class="podcast__platform">
@@ -72,7 +115,7 @@
                         <div class="image__cutter">
                             <img class="podcast__img" src="img/podcast/podcast_slider/cover (1).png" alt="podcast img" >
                         </div>                   
-                        <div class="podcast__title">Perplexed Mind</div>
+                        <a href="podcast-detail.html" class="podcast__title">Perplexed Mind</a>
                     </div>
                     <div class="podcast__slider__item swiper-slide">
                         <div class="podcast__platform">
@@ -83,7 +126,7 @@
                         <div class="image__cutter">
                             <img class="podcast__img" src="img/podcast/podcast_slider/cover (2).png" alt="podcast img" >
                         </div>                       
-                        <div class="podcast__title">Women’s Rights</div>
+                        <a href="podcast-detail.html" class="podcast__title">Women’s Rights</a>
                     </div>
                     <div class="podcast__slider__item swiper-slide">
                         <div class="podcast__platform">
@@ -94,7 +137,7 @@
                         <div class="image__cutter">
                             <img class="podcast__img" src="img/podcast/podcast_slider/cover (3).png" alt="podcast img" >
                         </div>                      
-                        <div class="podcast__title">Social Class</div>
+                        <a href="podcast-detail.html" class="podcast__title">Social Class</a>
                     </div>
                     <div class="podcast__slider__item swiper-slide">
                         <div class="podcast__platform">
@@ -105,7 +148,7 @@
                         <div class="image__cutter">
                             <img class="podcast__img" src="img/podcast/podcast_slider/cover (4).png" alt="podcast img" >
                         </div>                     
-                        <div class="podcast__title">Tesla Autopilot</div>
+                        <a href="podcast-detail.html" class="podcast__title">Tesla Autopilot</a>
                     </div>
                     <div class="podcast__slider__item swiper-slide">
                         <div class="podcast__platform">
@@ -116,7 +159,7 @@
                         <div class="image__cutter">
                             <img class="podcast__img" src="img/podcast/podcast_slider/cover.png" alt="podcast img" >
                         </div>                  
-                        <div class="podcast__title">Self–confidence</div>
+                        <a href="podcast-detail.html" class="podcast__title">Self–confidence</a>
                     </div>
                     <div class="podcast__slider__item swiper-slide">
                         <div class="podcast__platform">
@@ -127,7 +170,7 @@
                         <div class="image__cutter">
                             <img class="podcast__img" src="img/podcast/podcast_slider/cover (1).png" alt="podcast img" >
                         </div>                    
-                        <div class="podcast__title">Perplexed Mind</div>
+                        <a href="podcast-detail.html" class="podcast__title">Perplexed Mind</a>
                     </div>
                     <div class="podcast__slider__item swiper-slide">
                         <div class="podcast__platform">
@@ -138,7 +181,7 @@
                         <div class="image__cutter">
                             <img class="podcast__img" src="img/podcast/podcast_slider/cover (2).png" alt="podcast img" >
                         </div>                       
-                        <div class="podcast__title">Women’s Rights</div>
+                        <a href="podcast-detail.html" class="podcast__title">Women’s Rights</a>
                     </div>
                     <div class="podcast__slider__item swiper-slide">
                         <div class="podcast__platform">
@@ -149,8 +192,41 @@
                         <div class="image__cutter">
                             <img class="podcast__img" src="img/podcast/podcast_slider/cover (3).png" alt="podcast img" >
                         </div>                      
-                        <div class="podcast__title">Social Class</div>
-                    </div>      
+                        <a href="podcast-detail.html" class="podcast__title">Social Class</a>
+                    </div>
+                    <div class="podcast__slider__item swiper-slide">
+                        <div class="podcast__platform">
+                            <a href="#"><img src="img/podcast/platforms_icon/google podcast.png" alt="google"></a>
+                            <a href="#"><img src="img/podcast/platforms_icon/spotify.png" alt="spotify"></a>
+                            <a href="#"><img src="img/podcast/platforms_icon/youtube.png" alt="youtube"></a>
+                        </div>
+                        <div class="image__cutter">
+                            <img class="podcast__img" src="img/podcast/podcast_slider/cover (1).png" alt="podcast img" >
+                        </div>                    
+                        <a href="podcast-detail.html" class="podcast__title">Perplexed Mind</a>
+                    </div>
+                    <div class="podcast__slider__item swiper-slide">
+                        <div class="podcast__platform">
+                            <a href="#"><img src="img/podcast/platforms_icon/google podcast.png" alt="google"></a>
+                            <a href="#"><img src="img/podcast/platforms_icon/spotify.png" alt="spotify"></a>
+                            <a href="#"><img src="img/podcast/platforms_icon/youtube.png" alt="youtube"></a>
+                        </div>
+                        <div class="image__cutter">
+                            <img class="podcast__img" src="img/podcast/podcast_slider/cover (2).png" alt="podcast img" >
+                        </div>                       
+                        <a href="podcast-detail.html" class="podcast__title">Women’s Rights</a>
+                    </div>
+                    <div class="podcast__slider__item swiper-slide">
+                        <div class="podcast__platform">
+                            <a href="#"><img src="img/podcast/platforms_icon/google podcast.png" alt="google"></a>
+                            <a href="#"><img src="img/podcast/platforms_icon/spotify.png" alt="spotify"></a>
+                            <a href="#"><img src="img/podcast/platforms_icon/youtube.png" alt="youtube"></a>
+                        </div>
+                        <div class="image__cutter">
+                            <img class="podcast__img" src="img/podcast/podcast_slider/cover (3).png" alt="podcast img" >
+                        </div>                      
+                        <a href="podcast-detail.html" class="podcast__title">Social Class</a>
+                    </div>
                 </div>                        
             </div>
 
@@ -170,11 +246,11 @@
         <div class="about__container container">
             <img class="container__decor" src="img/Vector 29red.png" alt="Vector">
             <div class="inner__container">
-                <div class="container__title">
+                <h2 class="container__title">
                     Talk. Listen. Get inspired 
                     <br>
                     by every minute of it.
-                </div>
+                </h2>
                 <div class="about__content">
                     <div data-aos="fade-up" class="about__item">
                         <div class="image__cutter">
@@ -223,13 +299,13 @@
             <img class="container__decor" src="img/Vector 29.png" alt="Vector">
             <div class="listeners__container container">         
                 <div class="inner__container">
-                    <div class="container__title">
+                    <h2 class="container__title">
                         <img class="sparkle decor" src="img/listeners/Sparkle (3).png" alt="Sparkle">
                         What our listeners say
-                    </div>
-                    <div class="container__subtitle">
+                    </h2>
+                    <h3 class="container__subtitle">
                         Their experience throughout every platform
-                    </div>
+                    </h3>
     
                     <div data-aos="zoom-in" class="listeners__slider">
                         <div class="listeners__slider__wrapper swiper-wrapper">
@@ -359,13 +435,13 @@
         <div class="membership__container container">
             <img class="container__decor" src="img/Vector 29.png" alt="Vector">
             <div class="inner__container">
-                <div class="container__title">
+                <h2 class="container__title">
                     Membership benefits
                     <img class="scribble decor" src="img/membership/Scribble (1).png" alt="Scribble">
-                </div>
-                <div class="container__subtitle">
+                </h2>
+                <h3 class="container__subtitle">
                     Become our sponsor and get all benefits
-                </div>
+                </h3>
 
                 <div class="benefits__container">
                     <div data-aos="flip-left" class="benefits__item">
@@ -449,16 +525,15 @@
         </div>
 
 
-        <div class="episodes__container container">
+        <div id="episodes" class="episodes__container container">
             <img class="container__decor" src="img/Vector 29.png" alt="Vector">
             <div class="inner__container">
-                <div class="container__title">
+                <h2 class="container__title">
                     Recent Episodes
-                </div>
-                <div class="container__subtitle">
+                </h2>
+                <h3 class="container__subtitle">
                     Available on your favorite platform
-                </div>
-
+                </h3>
                 <div class="episodes">
                     <img class="sparkle decor" src="img/episodes/Sparkle.png" alt="#">
                     <div data-aos="zoom-in-right" class="episodes__item">
@@ -661,16 +736,16 @@
         </div>
 
 
-        <div class="sponsor__container container">
+        <div id="sponsor" class="sponsor__container container">
             <img class="container__decor" src="img/Vector 29.png" alt="Vector">
             <div class="inner__container">
-                <div class="container__title">
+                <h2 class="container__title">
                     <img class="sparkle decor" src="img/sponsor/Sparkle (1).png" alt="Sparkle">
                     Become our sponsor
-                </div>
-                <div class="container__subtitle">
+                </h2>
+                <h3 class="container__subtitle">
                     Get exclusive episodes, merch and more
-                </div>
+                </h3>
                 <div class="subcriptions__container">
                     <div data-aos="fade-down" class="subcription column">
                         <div class="subcription row">
@@ -684,7 +759,7 @@
                                 cing elit, sed do eiusmod tempor.
                             </div>
                             <div class="subcription__bottom__section">
-                                <div class="subcription__btn"><a href="#" class="btn btn__black">SUBSCRIBE</a></div>
+                                <div class="subcription__btn"><button class="btn btn__black openModalBtn">SUBSCRIBE</button></div>
                                 <div class="price">
                                     <span class="highlighted__word-red">
                                         $9.99
@@ -723,7 +798,7 @@
                                 cing elit, sed do eiusmod tempor.
                             </div>
                             <div class="subcription__bottom__section">
-                                <div class="subcription__btn"><a href="#" class="btn btn__black">SUBSCRIBE</a></div>
+                                <div class="subcription__btn"><button class="btn btn__black openModalBtn">SUBSCRIBE</button></div>
                                 <div class="price">
                                     <span class="highlighted__word-red">
                                         $14.99
@@ -760,7 +835,7 @@
                                 cing elit, sed do eiusmod tempor.
                             </div>
                             <div class="subcription__bottom__section">
-                                <div class="subcription__btn"><a href="#" class="btn btn__black">SUBSCRIBE</a></div>
+                                <div class="subcription__btn"><button class="btn btn__black openModalBtn">SUBSCRIBE</button></div>
                                 <div class="price">
                                     <span class="highlighted__word-red">
                                         $29.99
@@ -786,6 +861,46 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <div class="inner__container">
+                            <div class="container__title">
+                                Become our sponsor
+                            </div>
+                            <form method="post" class="contact__form">
+                                <div class="contact__info">
+                                    <div class="form__group">
+                                        <label class="required" for="">Full name</label>
+                                        <input class="form__item form__item__text-bold" placeholder="Full name" type="text">
+                                    </div>
+                                    <div class="form__group">
+                                        <label class="required" aria-label="email">Email</label>
+                                        <input class="form__item" placeholder="johndoe@gmail.com" type="email">
+                                    </div>
+                                    <div class="form__group">
+                                        <label class="required" for="">Phone</label>
+                                        <input class="form__item" placeholder="Phone" type="text">
+                                    </div>
+                                    <div class="form__group">
+                                        <label class="required" for="">Subject</label>
+                                        <input class="form__item" placeholder="Subject..." type="text">
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    <div class="form__group">
+                                        <label class="required" for="">Message</label>
+                                        <textarea placeholder="Your message goes here..." class="form__item"></textarea>
+                                    </div>
+                                </div>
+            
+                                <div class="form__bottom__section">
+                                    <button id="submitFormBtn" class="btn btn__black">SEND MESSAGE</button>
+                                </div>
+                            </form>
+                        </div>                       
+                    </div>            
+                </div>
             </div>
         </div>
 
@@ -793,59 +908,63 @@
         <div class="news__container container">
             <img class="container__decor" src="img/Vector 29.png" alt="Vector">
             <div class="inner__container">
-                <div class="container__title">
+                <h2 class="container__title">
                     Article and News
-                </div>
-                <div class="container__subtitle">
+                </h2>
+                <h3 class="container__subtitle">
                     News, tips, tricks and more
-                </div>
+                </h3>
                 <div class="news">
                     <div data-aos="fade-down" class="news__item">
-                        <div class="image__cutter">
-                            <img src="img/news/img.png" alt="#">
-                        </div>
-                        <div class="news__type">
-                            PODCAST
-                        </div>
-                        <div class="news__title">
-                            Setup your own podcast
-                        </div>
-                        <div class="news__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
-                        </div>
-                        <div class="news__bottom__section">
-                            <div class="tags">
-                                <div class="tag">business</div>
-                                <div class="tag">startup</div>
+                        <a href="single-blog.html">
+                            <div class="image__cutter">
+                                <img src="img/news/img.png" alt="#">
                             </div>
-                            <div class="date">
-                                Sep 14, 2021
+                            <div class="news__type">
+                                PODCAST
                             </div>
-                        </div>
+                            <div class="news__title">
+                                Setup your own podcast
+                            </div>
+                            <div class="news__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
+                            </div>
+                            <div class="news__bottom__section">
+                                <div class="tags">
+                                    <div class="tag">business</div>
+                                    <div class="tag">startup</div>
+                                </div>
+                                <div class="date">
+                                    Sep 14, 2021
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <div data-aos="fade-down" class="news__item">
-                        <div class="image__cutter">
-                            <img src="img/news/img (1).png" alt="#">
-                        </div>
-                        <div class="news__type">
-                            TIPS & TRICK
-                        </div>
-                        <div class="news__title">
-                            Doodle artwork 101
-                        </div>
-                        <div class="news__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
-                        </div>
-                        <div class="news__bottom__section">
-                            <div class="tags">
-                                <div class="tag">art</div>
-                                <div class="tag">creative</div>
-                                <div class="tag">tips and trick</div>
+                        <a href="single-blog.html">
+                            <div class="image__cutter">
+                                <img src="img/news/img (1).png" alt="#">                
                             </div>
-                            <div class="date">
-                                Sep 12, 2021
+                            <div class="news__type">
+                                TIPS & TRICK
                             </div>
-                        </div>
+                            <div class="news__title">
+                                Doodle artwork 101
+                            </div>
+                            <div class="news__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
+                            </div>
+                            <div class="news__bottom__section">
+                                <div class="tags">
+                                    <div class="tag">art</div>
+                                    <div class="tag">creative</div>
+                                    <div class="tag">tips and trick</div>
+                                </div>
+                                <div class="date">
+                                    Sep 12, 2021
+                                </div>
+                            </div>
+                        </a>                
                     </div>
                 </div>
                 <!-- <img class="vector" src="/img/news/Vector (1).png" alt=""> -->
@@ -863,14 +982,14 @@
             <div class="beta__text">
                 BETA
             </div>
-            <div class="container__title">
+            <h2 class="container__title">
                 Available now
                 <br>
                 Pod of Cast App
-            </div>
-            <div class="container__subtitle">
+            </h2>
+            <h3 class="container__subtitle">
                 We just launched our podcast app!
-            </div>
+            </h3>
             <div class="downnload__bottom__section">
                 <div class="download__btn">
                     <img class="sparkle" src="img/download/Sparkle (2).png" alt="Sparkle">

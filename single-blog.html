@@ -26,49 +26,58 @@
             <div class="inner__container">
                 <header>
                     <div class="logo__container">
-                        <img src="img/logo.png" alt="logo">
+                        <a href="index.html"><img src="img/logo.png" alt="logo"></a>                  
                     </div>
-                    <nav>
+                    <nav class="nav__main">
                         <ul>
-                            <li><a href="#" class="nav__item">Episodes</a></li>
-                            <li><a href="#" class="nav__item">About</a></li>
-                            <li><a href="#" class="nav__item">More</a></li>
+                            <li><a href="index.html#episodes" class="nav__item">Episodes</a></li>
+                            <li><a href="about.html" class="nav__item">About</a></li>
+                            <li>   
+                                <div class="dropdown">
+                                    <span class="nav__item" >More</span>
+                                    <ul class="dropdown-content">
+                                        <li><a href="blog.html" class="dropdown-item">Blog</a></li>
+                                    </ul>
+                                </div>                         
+                            </li>
                         </ul>                       
                     </nav>
                     <div class="additional__block">
-                        <a href="#" class="resent__episodes__btn">Resent Episodes</a>
-                        <a href="#" class="subscribe">Subscribe</a>
+                        <a href="index.html#episodes" class="resent__episodes__btn">Resent Episodes</a>
+                        <a href="index.html#sponsor" class="subscribe">Subscribe</a>
                     </div>
-                    <div class="burger-menu">
-                        <img src="img/hamburger-menu-512 (1).webp" alt="burger menu">
-                    </div>
+                    
+                    <div class="burger-wrapper">
+                        <div id="burger-menu">
+                            <div id="menu-bar" onclick="menuOnClick()">
+                                <div id="bar1" class="bar"></div>
+                                <div id="bar2" class="bar"></div>
+                                <div id="bar3" class="bar"></div>
+                            </div>
+                            <nav class="burger-nav" id="burger-nav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="podcast-detail.html">Episodes</a></li>
+                                </ul>
+                            </nav> 
+                        </div>                         
+                        <div class="menu-bg" id="menu-bg"></div>   
+                    </div>                                   
                 </header>
+            </div>
 
-                <div class="section__navigation">
-                    <a href="#" class="link">
-                        <div class="image__cutter">
-                            <img src="img/single-block-page/Arrow - Left Circle.png" alt="#">
-                        </div>
-                         Back to articles
-                    </a>
-                    <div class="date">
-                        Sep 12, 2021
-                    </div>
-                </div>
-
-                
-                
-            </div>          
             <div class="podcast__container">
                 <img class="container__img-left decor" src="img/podcast/Hero Shape Swirl.png" alt="#">
                 <img class="container__img-right decor" src="img/podcast/Group 48095792.png" alt="#">
                 
-                <div class="podcast__container__subtitle">
+                <h2 class="podcast__container__subtitle">
                     <span class="highlighted__word-red-bold">TIPS & TRICKS</span> 
-                </div>  
-                <div class="podcast__container__title">
+                <h2/>  
+                <h3 class="podcast__container__title">
                     Doodle Artwork 101 
-                </div>
+                </h3>
             </div>  
                 
             <div class="inner__container">
@@ -94,9 +103,9 @@
         
         <div class="blog__container container">
             <div class="inner__container">
-                <div class="container__title__small">
+                <h4 class="container__title__small">
                     Doodle for our podcast background room
-                </div>
+                </h4>
 
                 <div class="text__content">
                     <div class="text__item">
@@ -214,59 +223,63 @@
         <div class="related__container container">
             <img class="container__decor" src="img/Vector 29.png" alt="Vector">
             <div class="inner__container">
-                <div class="container__title">
+                <h2 class="container__title">
                     Related Article
-                </div>
-                <div class="container__subtitle">
+                </h2>
+                <h3 class="container__subtitle">
                     News, tips, tricks and more
-                </div>
+                </h3>
                 <div class="news">
-                    <div class="news__item">
-                        <div class="image__cutter">
-                            <img src="img/news/img.png" alt="#">
-                        </div>
-                        <div class="news__type">
-                            PODCAST
-                        </div>
-                        <div class="news__title">
-                            Setup your own podcast
-                        </div>
-                        <div class="news__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
-                        </div>
-                        <div class="news__bottom__section">
-                            <div class="tags">
-                                <div class="tag">business</div>
-                                <div class="tag">startup</div>
+                    <div data-aos="fade-down" class="news__item">
+                        <a href="single-blog.html">
+                            <div class="image__cutter">
+                                <img src="img/news/img.png" alt="#">
                             </div>
-                            <div class="date">
-                                Sep 14, 2021
+                            <div class="news__type">
+                                PODCAST
                             </div>
-                        </div>
+                            <div class="news__title">
+                                Setup your own podcast
+                            </div>
+                            <div class="news__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
+                            </div>
+                            <div class="news__bottom__section">
+                                <div class="tags">
+                                    <div class="tag">business</div>
+                                    <div class="tag">startup</div>
+                                </div>
+                                <div class="date">
+                                    Sep 14, 2021
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="news__item">
-                        <div class="image__cutter">
-                            <img src="img/news/img (1).png" alt="#">
-                        </div>
-                        <div class="news__type">
-                            TIPS & TRICK
-                        </div>
-                        <div class="news__title">
-                            Doodle artwork 101
-                        </div>
-                        <div class="news__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
-                        </div>
-                        <div class="news__bottom__section">
-                            <div class="tags">
-                                <div class="tag">art</div>
-                                <div class="tag">creative</div>
-                                <div class="tag">tips and trick</div>
+                    <div data-aos="fade-down" class="news__item">
+                        <a href="single-blog.html">
+                            <div class="image__cutter">
+                                <img src="img/news/img (1).png" alt="#">                
                             </div>
-                            <div class="date">
-                                Sep 12, 2021
+                            <div class="news__type">
+                                TIPS & TRICK
                             </div>
-                        </div>
+                            <div class="news__title">
+                                Doodle artwork 101
+                            </div>
+                            <div class="news__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
+                            </div>
+                            <div class="news__bottom__section">
+                                <div class="tags">
+                                    <div class="tag">art</div>
+                                    <div class="tag">creative</div>
+                                    <div class="tag">tips and trick</div>
+                                </div>
+                                <div class="date">
+                                    Sep 12, 2021
+                                </div>
+                            </div>
+                        </a>                
                     </div>
                 </div>
                 <div class="all__news__btn">
@@ -282,14 +295,14 @@
             <div class="beta__text">
                 BETA
             </div>
-            <div class="container__title">
+            <h2 class="container__title">
                 Available now
                 <br>
                 Pod of Cast App
-            </div>
-            <div class="container__subtitle">
+            </h2>
+            <h3 class="container__subtitle">
                 We just launched our podcast app!
-            </div>
+            </h3>
             <div class="downnload__bottom__section">
                 <div class="download__btn">
                     <img class="sparkle" src="img/download/Sparkle (2).png" alt="Sparkle">
