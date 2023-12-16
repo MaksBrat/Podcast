@@ -112,24 +112,6 @@ header{
     transform: translate(50%,-35%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .additional__block {
     margin-left: auto;
 }
@@ -845,7 +827,6 @@ header{
         padding: 50px 20px;
     }
 }
-
 
 @media screen and (max-width: 720px){
     .container__title{
